@@ -1,11 +1,293 @@
 ---
-import Welcome from '../components/Welcome.astro';
 import Layout from '../layouts/Layout.astro';
-
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
 ---
 
 <Layout>
-	<Welcome />
+	<main class="text-center">
+
+		{/*Photo Slider*/} 
+		<section class="relative flex flex-col items-center justify-end h-screen">
+			<div class="absolute gradient w-full z-10 flex flex-col items-center justify-center px-6 pb-30">
+				<h2 class="text-3xl mb-2 text-rose-900">Nahuel & Victoria</h2>
+				<h1 class="title text-7xl mb-2 text-rose-50">¡Nos Casamos!</h1>
+				<h3 class="font-medium text-rose-50">y queremos compartilo con vos.</h3>
+			</div>
+			<div>
+				<img src="/ph.png" class="object-cover bg-center w-full h-full" alt="couple"/>
+			</div>
+		</section>
+
+		{/*Welcome */}
+		<section class="flex items-center justify-center py-10 border-b-1 border-rose-900/80">
+			<div class="flex flex-col items-center justify-center max-w-[1200px] gap-6 py-10">
+				<lord-icon
+    			src="https://cdn.lordicon.com/aydxrkfl.json"
+    			trigger="loop"
+				stroke="light"
+				delay="500"
+    			colors="primary:#000000,secondary:#911710"
+    			style="width:70px;height:70px">
+				</lord-icon>
+				<h2 class="title text-[32px] mb-2">Bienvenidos!</h2>
+				<p class="max-w-[550px]">
+					Esto es un ejemplo, donde podrás ver las principales características que incluyen nuestras invitaciones.
+					<br/>
+					<br/>
+					Todos los módulos, contenidos, fotos, textos, colores y tipo de letra, son opcionales y se personalizan 100% para tu evento.
+					<br/>
+					<br/>
+					Esperamos que te guste!
+				</p>
+			</div>
+		</section>
+
+		{/*Calendar Countdown */}
+		<section class="flex items-center justify-center py-[150px] border-b-1 border-rose-900/80">
+			<div class="flex flex-col items-center justify-center max-w-[1200px] py-10">
+				<lord-icon class="icon" src="https://cdn.lordicon.com/mzfjzfjs.json" trigger="loop" state="" stroke="light" delay="300" colors="primary:#000000,secondary:#911710" style="width:70px;height:70px"></lord-icon>
+				<br/>
+				<p class="font-bold tracking-[3px] text-[10px] mb-[5px]">
+					AGENDA LA FECHA
+				</p>
+				<h2 class="title text-[32px] mb-6">25 de Julio</h2>
+
+				<div class="flex items-center justify-center gap-[50px] py-8 mb-6" data-init-value="07/25/2025 10:30:00">
+					<div class="block text-[51px] text-center font-[300]">
+						<div class="title">90</div>
+						<span class="block text-xs text-center mt-[-5px]">DIAS</span>
+					</div>
+					<div class="block text-2xl text-center font-[400]">:</div>
+					<div class="block text-[51px] text-center font-[300]">
+						<div class="title">90</div>
+						<span class="block text-xs text-center mt-[-5px]">HS</span>
+					</div>
+					<div class="block text-2xl text-center font-[400]">:</div>
+					<div class="block text-[51px] text-center font-[300]">
+						<div class="title">90</div>
+						<span class="block text-xs text-center mt-[-5px]">MIN</span>
+					</div>
+					<div class="block text-2xl text-center font-[400]">:</div>
+					<div class="block text-[51px] text-center font-[300]">
+						<div class="title">90</div>
+						<span class="block text-xs text-center mt-[-5px]">SEG</span>
+					</div>
+				</div>
+
+				<a href="#" class="inline-block text-sm text-center text-rose-50 font-[600] bg-rose-900/80 py-[10px] px-[32px] rounded-[30px]">AGREGAR FECHA</a>
+			</div>
+		</section>
+
+		{/*Events*/}
+		<secction class="flex items-start justify-center gap-6 py-[150px] border-b-1 border-rose-900/80">
+
+			{/*Civil*/}
+			<article class="md:w-[350px] w-full flex flex-col items-center justify-center gap-6 px-[30px]">
+				<lord-icon src="https://cdn.lordicon.com/czmrowis.json" trigger="loop" state="" stroke="light" delay="300" colors="primary:#000000,secondary:#911710" style="width:70px;height:70px"></lord-icon>
+				<h2 class="title text-4xl text-center font-[400]">Civil</h2>
+				<div>
+					<div class="flex items-center justify-center gap-5 px-5 pb-4 mb-4 border-b-1 border-rose-900/80">
+						<div class="flex flex-col items-center justify-center gap-0">
+							<p class="text-[26px]">25</p>
+							<span class="txt-[12px]">Julio</span>
+						</div>
+						<div class="h-[70px] w-0 border-r-1 bg-rose-900/80"></div>
+						<div class="flex flex-col items-center justify-center gap-0">
+							<p class="text-[26px]">10:30</p>
+							<span class="txt-[12px]">HORAS</span>
+						</div>
+					</div>
+					<div class="px-[30px]">
+						<b class="text-xl">Registro Civil de Villa Italia</b>
+					</div>
+				</div>
+				<a href="#" class="inline-block text-sm text-center text-rose-50 font-[600] bg-rose-900/80 py-[10px] px-[32px] rounded-[30px]">CÓMO LLEGAR</a>
+			</article>
+
+			{/*Ceremony*/}
+			<article class="md:w-[350px] w-full flex flex-col items-center justify-center gap-6 px-[30px]">
+				<lord-icon src="https://cdn.lordicon.com/fshosubk.json" trigger="loop" state="" stroke="light" delay="300" colors="primary:#000000,secondary:#911710" style="width:70px;height:70px"></lord-icon>
+				<h2 class="title text-4xl text-center font-[400]">Ceremonia</h2>
+				<div>
+					<div class="flex items-center justify-center gap-5 px-5 pb-4 mb-4 border-b-1 border-rose-900/80">
+						<div class="flex flex-col items-center justify-center gap-0">
+							<p class="text-[26px]">25</p>
+							<span class="txt-[12px]">Julio</span>
+						</div>
+						<div class="h-[70px] w-0 border-r-1 bg-rose-900/80"></div>
+						<div class="flex flex-col items-center justify-center gap-0">
+							<p class="text-[26px]">12:30</p>
+							<span class="txt-[12px]">HORAS</span>
+						</div>
+					</div>
+					<div class="px-[30px] text-xl">
+						<p>
+							<b>La Casona del Cerro</b>
+						</p>
+						<p>Lendes 2505</p>
+					</div>
+				</div>
+				<a href="#" class="inline-block text-sm text-center text-rose-50 font-[600] bg-rose-900/80 py-[10px] px-[32px] rounded-[30px]">CÓMO LLEGAR</a>
+			</article>
+
+			{/*Party*/}
+			<article class="md:w-[350px] w-full flex flex-col items-center justify-center gap-6 px-[30px]">
+				<lord-icon src="https://cdn.lordicon.com/ohcuigqh.json" trigger="loop" state="" stroke="light" colors="primary:#000000,secondary:#911710" style="width:70px;height:70px"></lord-icon>
+				<h2 class="title text-4xl text-center font-[400]">Festejo</h2>
+				<div>
+					<div class="flex items-center justify-center gap-5 px-5 pb-4 mb-4 border-b-1 border-rose-900/80">
+						<div class="flex flex-col items-center justify-center gap-0">
+							<p class="text-[26px]">25</p>
+							<span class="txt-[12px]">Julio</span>
+						</div>
+						<div class="h-[70px] w-0 border-r-1 bg-rose-900/80"></div>
+						<div class="flex flex-col items-center justify-center gap-0">
+							<p class="text-[26px]">13:00</p>
+							<span class="txt-[12px]">HORAS</span>
+						</div>
+					</div>
+					<div class="px-[30px] text-xl">
+						<p>
+							<b>La Casona del Cerro</b>
+						</p>
+						<p>Lendes 2505</p>
+					</div>
+				</div>
+				<a href="#" class="inline-block text-sm text-center text-rose-50 font-[600] bg-rose-900/80 py-[10px] px-[32px] rounded-[30px]">CÓMO LLEGAR</a>
+			</article>
+			
+			{/*Dress Code*/}
+			<article class="md:w-[350px] w-full flex flex-col items-center justify-center gap-6 px-[30px]">
+				<lord-icon src="https://cdn.lordicon.com/dkyhucjt.json" trigger="loop" state="" stroke="light" colors="primary:#000000,secondary:#911710" style="width:70px;height:70px"></lord-icon>
+				<h2 class="title text-4xl text-center font-[400]">Dress Code</h2>
+				<div>
+					<p>
+						<b>Elegante Sport</b>
+					</p>
+					<br/>
+					<p>
+						El blanco queda reservado para la novia.
+					</p>
+				</div>
+			</article>
+
+		</secction>
+
+		{/*Timeline */}
+		<section class="flex items-center justify-center py-10 border-b-1 border-rose-900/80">
+			<div class="flex items-center justify-center max-w-[1200px] py-[50px]">
+				<div class="flex flex-col items-center justify-center gap-6 w-full p-10">
+					<lord-icon
+					src="https://cdn.lordicon.com/warimioc.json"
+					trigger="loop"
+					stroke="light"
+					delay="500"
+					colors="primary:#000000,secondary:#911710"
+					style="width:70px;height:70px">
+					</lord-icon>
+					<h2 class="title text-[32px] mb-2">Cronograma de la Boda</h2>
+				</div>
+				<div class="w-1/2">
+					<img src="/timeline.svg" alt="Wedding Timeline">
+				</div>
+			</div>
+		</section>
+
+		{/*Gifts */}
+		<section class="py-[150px] bg-emerald-200/70">
+			<div class="flex flex-col w-[790px] items-center justify-center py-[60px] px-[100px] mx-auto gap-3 bg-white/80 rounded-[6px]">
+				<lord-icon class="icon" src="https://cdn.lordicon.com/kezeezyg.json" trigger="loop" state="" stroke="light" delay="300" colors="primary:#000000,secondary:#911710" style="width:70px;height:70px"></lord-icon>
+				<h2 class="title text-[32px]">Regalos</h2>
+
+				<p>
+					Tu presencia es lo más importante para nosotros.
+					<br/>
+					Si además quieres hacernos un regalo, puedes ayudarnos con nuestra luna de miel
+				</p>
+
+				<a href="#" class="inline-block text-sm text-center text-rose-50 font-[600] bg-rose-900/80 py-[10px] px-[32px] mt-3 rounded-[30px]">MÁS INFORMACION</a>
+			</div>
+		</section>
+		
+		{/*Confirmation */}
+		<section class="flex flex-col items-center justify-center py-[150px] bg-rose-900/80 text-rose-50">
+			<div class="flex flex-col w-[790px] items-center justify-center">
+				<lord-icon class="icon" src="https://cdn.lordicon.com/heqlbljj.json" trigger="loop" state="" stroke="light" delay="300" colors="primary:#fff1f2,secondary:#fff1f2" style="width:70px;height:70px"></lord-icon>
+				<br/>
+				<span class="font-[600] text-[10px] tracking-[3px] mb-[5px] ">RSVP</span>
+				<h2 class="title text-[32px] mb-2">Confirmacion de Asistencia</h2>
+
+				<p>
+					Esperamos contar con tu presencia
+				</p>
+
+				<a href="#" class="inline-block text-sm text-center text-rose-900 font-[600] bg-rose-50 py-[10px] px-[32px] mt-6 rounded-[30px]">MÁS INFORMACION</a>
+			</div>
+		</section>
+		
+		{/*Story */}
+		<section class="flex items-center justify-center ">
+			<div class="w-1/2">
+				<img src="/couple.png"/>
+			</div>
+			<div class="flex flex-col w-1/2 items-center justify-center gap-6 p-[100px]">
+				<lord-icon
+    			src="https://cdn.lordicon.com/aydxrkfl.json"
+    			trigger="loop"
+				stroke="light"
+				delay="500"
+    			colors="primary:#000000,secondary:#911710"
+    			style="width:70px;height:70px">
+				</lord-icon>
+				<h2 class="title text-[32px] mb-2">Nuestra Historia</h2>
+
+				<p class="max-w-[550px]">
+					Dicen que todos los caminos conducen a Roma. Como los nuestros, que un día de Septiembre hace algunos años, con una selfie y un desayuno dieron como resultado atardeceres en la playa y el comienzo de un amor de verano.
+				</p>
+		</div>
+		</section>
+
+		{/*Sotial*/}
+		<secction class="flex items-start justify-center gap-6 py-[150px] border-b-1 border-rose-900/80">
+
+			{/*Spotify*/}
+			<article class="md:w-[350px] w-full flex flex-col items-center justify-center gap-6">
+				<lord-icon src="https://cdn.lordicon.com/xsiktwiz.json" trigger="loop" state="" stroke="light" delay="300" colors="primary:#000000,secondary:#911710" style="width:70px;height:70px"></lord-icon>
+				<h2 class="title text-4xl text-center font-[400]">Nuestra Playlist</h2>
+				<p>
+					Agrega nuestra playlist y recomendá las canciones que no pueden faltar en nuestra boda
+				</p>
+				<a href="#" class="inline-block text-sm text-center text-rose-50 font-[600] bg-rose-900/80 py-[10px] px-[32px] rounded-[30px]">IR A SPOTIFY</a>
+			</article>
+
+			{/*Instagram*/}
+			<article class="md:w-[350px] w-full flex flex-col items-center justify-center gap-6">
+				<lord-icon src="https://cdn.lordicon.com/tgyvxauj.json" trigger="loop" state="" stroke="light" delay="300" colors="primary:#000000,secondary:#911710" style="width:70px;height:70px"></lord-icon>
+				<h2 class="title text-4xl text-center font-[400]">#NosCasamos</h2>
+				<div>
+					<p>
+						Sumate a la boda compartiendo fotos y videos con nuestro hashtag.
+					</p>
+				</div>
+				<a href="#" class="inline-block text-sm text-center text-rose-50 font-[600] bg-rose-900/80 py-[10px] px-[32px] rounded-[30px]">IR A INSTAGRAM</a>
+			</article>
+
+		</secction>
+
+		<section class="bg-cover bg-center bg-rose-900/50">
+			<div class="py-[100px] w-full max-w-full flex items-center justify-center gap-6">
+				<div class="w-full flex flex-col items-center justify-center gap-6 p-10">
+					<h2 class="title text-[32px]">La medida del amor es amar sin medida</h2>
+					<p>San Agustín</p>
+				</div>
+			</div>
+		</section>
+
+	</main>
 </Layout>
+
+<style>
+	.gradient {
+		background: #DFE7EF;
+		background: linear-gradient(180deg, #DFE7EF00, #09090990);
+	}
+</style>
