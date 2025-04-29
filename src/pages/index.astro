@@ -12,8 +12,10 @@ import Layout from '../layouts/Layout.astro';
 				<h1 class="title text-[40px] md:text-7xl mb-2 text-rose-50">¡Nos Casamos!</h1>
 				<h3 class="font-medium text-rose-50">y queremos compartilo con vos.</h3>
 			</div>
-			<div>
-				<img src="/couple.png" class="object-fill w-full h-full" alt="couple"/>
+			<div class="relative w-full h-full- max-h-full">
+				<div class="flex items-stretch justify-center w-full h-full- max-h-full">
+					<img src="/couple.png" class="flex-grow-1 object-cover object-top w-full h-screen md:h-auto" alt="couple"/>
+				</div>
 			</div>
 		</section>
 
@@ -55,22 +57,22 @@ import Layout from '../layouts/Layout.astro';
 
 				<div class="flex items-center justify-between md:justify-center w-full h-full md:h-[148px] md:gap-[50px] px-[34px] md:py-8 mb-6" data-init-value="07/25/2025 10:30:00">
 					<div class="block text-[32px] md:text-[51px] text-center font-[300]">
-						<div class="title">90</div>
+						<div class="title">85</div>
 						<span class="block text-xs text-center mt-[-5px]">DIAS</span>
 					</div>
 					<div class="block text-2xl text-center font-[400]">:</div>
 					<div class="block text-[32px] md:text-[51px] text-center font-[300]">
-						<div class="title">90</div>
+						<div class="title">17</div>
 						<span class="block text-xs text-center mt-[-5px]">HS</span>
 					</div>
 					<div class="block text-2xl text-center font-[400]">:</div>
 					<div class="block text-[32px] md:text-[51px] text-center font-[300]">
-						<div class="title">90</div>
+						<div class="title">36</div>
 						<span class="block text-xs text-center mt-[-5px]">MIN</span>
 					</div>
 					<div class="block text-2xl text-center font-[400]">:</div>
 					<div class="block text-[32px] md:text-[51px] text-center font-[300]">
-						<div class="title">90</div>
+						<div class="title">21</div>
 						<span class="block text-xs text-center mt-[-5px]">SEG</span>
 					</div>
 				</div>
@@ -188,7 +190,7 @@ import Layout from '../layouts/Layout.astro';
 					</lord-icon>
 					<h2 class="title text-[32px] mb-2">Cronograma de la Boda</h2>
 				</div>
-				<div class="w-full md:w-1/2">
+				<div class="w-[calc(100%-60px)] md:w-1/2">
 					<img src="/timeline.svg" alt="Wedding Timeline">
 				</div>
 			</div>
@@ -196,7 +198,7 @@ import Layout from '../layouts/Layout.astro';
 
 		{/*Gifts */}
 		<section class="w-full py-[150px] bg-[url(/FONDO-ROSAS.png)] bg-cover bg-center">
-			<div class="flex flex-col w-[420px] md:w-[790px] items-center justify-center py-[60px] px-[30px] md:px-[100px] mx-auto gap-3 bg-rose-50/80 rounded-[6px]">
+			<div class="flex flex-col w-[calc(100%-60px)] md:w-[790px] items-center justify-center py-[60px] px-[30px] md:px-[100px] mx-auto gap-3 bg-rose-50/80 rounded-[6px]">
 				<lord-icon class="icon" src="https://cdn.lordicon.com/kezeezyg.json" trigger="loop" state="" stroke="light" delay="300" colors="primary:#8b0836,secondary:#8b0836" style="width:70px;height:70px"></lord-icon>
 				<h2 class="title text-[32px]">Regalos</h2>
 
@@ -253,7 +255,7 @@ import Layout from '../layouts/Layout.astro';
 
 		</secction>
 
-		<section class="h-full md:h-auto bg-cover bg-center bg-rose-900/50">
+		<section class="h-[70vh] md:h-auto bg-cover bg-center bg-rose-900/50">
 			<div class="py-[100px] w-full max-w-full flex items-center justify-center gap-6">
 				<div class="w-full flex flex-col items-center justify-center gap-6 p-10">
 					<h2 class="title text-[32px]">La medida del amor es amar sin medida</h2>
