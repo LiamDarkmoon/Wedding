@@ -3,71 +3,73 @@ import Layout from '../layouts/Layout.astro';
 ---
 
 <Layout>
-	<main class="text-center">
+	<main class="w-full text-center overflow-x-hidden">
 
 		{/*Photo Slider*/} 
-		<section class="relative flex flex-col items-center justify-end h-screen">
-			<div class="absolute gradient w-full z-10 flex flex-col items-center justify-center px-6 pb-30">
+		<section class="relative flex flex-col items-center justify-end w-full h-screen">
+			<div class="absolute gradient w-full h-full bottom-0 z-10 flex flex-col items-center justify-end px-6 pb-30">
 				<h2 class="text-3xl mb-2 text-rose-700/70">Nahuel y Viqui</h2>
-				<h1 class="title text-7xl mb-2 text-rose-50">¡Nos Casamos!</h1>
+				<h1 class="title text-[40px] md:text-7xl mb-2 text-rose-50">¡Nos Casamos!</h1>
 				<h3 class="font-medium text-rose-50">y queremos compartilo con vos.</h3>
 			</div>
 			<div>
-				<img src="/couple.png" class="object-fill bg-red-900 bg-top" alt="couple"/>
+				<img src="/couple.png" class="object-fill w-full h-full" alt="couple"/>
 			</div>
 		</section>
 
 		{/*Welcome */}
-		<section class="flex items-center justify-center py-10 border-b-1 border-rose-900/80">
-			<div class="flex flex-col items-center justify-center max-w-[1200px] gap-6 py-10">
-				<lord-icon
-    			src="https://cdn.lordicon.com/aydxrkfl.json"
-    			trigger="loop"
-				stroke="light"
-				delay="500"
-    			colors="primary:#8b0836,secondary:#8b0836"
-    			style="width:70px;height:70px">
-				</lord-icon>
-				<h2 class="title text-[32px] mb-2">Bienvenidos!</h2>
-				<p class="max-w-[550px]">
-					Esto es un ejemplo, donde podrás ver las principales características que incluyen nuestras invitaciones.
-					<br/>
-					<br/>
-					Todos los módulos, contenidos, fotos, textos, colores y tipo de letra, son opcionales y se personalizan 100% para tu evento.
-					<br/>
-					<br/>
-					Esperamos que te guste!
-				</p>
+		<section class="w-full py-10 border-b-1 border-rose-900/80">
+			<div class="flex flex-col items-center justify-center max-w-[1200px] m-auto">
+				<div class="flex flex-col items-center justify-center w-full gap-6 py-[100px] px-[30px] md:p-10">
+					<lord-icon
+					src="https://cdn.lordicon.com/aydxrkfl.json"
+					trigger="loop"
+					stroke="light"
+					delay="500"
+					colors="primary:#8b0836,secondary:#8b0836"
+					style="width:70px;height:70px">
+					</lord-icon>
+					<h2 class="title text-[32px] mb-2">Bienvenidos!</h2>
+					<p class="max-w-[550px]">
+						Esto es un ejemplo, donde podrás ver las principales características que incluyen nuestras invitaciones.
+						<br/>
+						<br/>
+						Todos los módulos, contenidos, fotos, textos, colores y tipo de letra, son opcionales y se personalizan 100% para tu evento.
+						<br/>
+						<br/>
+						Esperamos que te guste!
+					</p>
+				</div>
 			</div>
 		</section>
 
 		{/*Calendar Countdown */}
-		<section class="flex items-center justify-center py-[150px] border-b-1 border-rose-900/80">
-			<div class="flex flex-col items-center justify-center max-w-[1200px] py-10">
-				<lord-icon class="icon" src="https://cdn.lordicon.com/mzfjzfjs.json" trigger="loop" state="" stroke="light" delay="300" colors="primary:#8b0836,secondary:#8b0836" style="width:70px;height:70px"></lord-icon>
+		<section class="flex items-center justify-center w-full py-[150px] border-b-1 border-rose-900/80">
+			<div class="flex flex-col items-center justify-center w-full">
+				<lord-icon class="mb-6" src="https://cdn.lordicon.com/mzfjzfjs.json" trigger="loop" state="" stroke="light" delay="300" colors="primary:#8b0836,secondary:#8b0836" style="width:70px;height:70px"></lord-icon>
 				<br/>
 				<p class="font-bold tracking-[3px] text-[10px] mb-[5px]">
 					AGENDA LA FECHA
 				</p>
 				<h2 class="title text-[32px] mb-6">25 de Julio</h2>
 
-				<div class="flex items-center justify-center gap-[50px] py-8 mb-6" data-init-value="07/25/2025 10:30:00">
-					<div class="block text-[51px] text-center font-[300]">
+				<div class="flex items-center justify-between md:justify-center w-full h-full md:h-[148px] md:gap-[50px] px-[34px] md:py-8 mb-6" data-init-value="07/25/2025 10:30:00">
+					<div class="block text-[32px] md:text-[51px] text-center font-[300]">
 						<div class="title">90</div>
 						<span class="block text-xs text-center mt-[-5px]">DIAS</span>
 					</div>
 					<div class="block text-2xl text-center font-[400]">:</div>
-					<div class="block text-[51px] text-center font-[300]">
+					<div class="block text-[32px] md:text-[51px] text-center font-[300]">
 						<div class="title">90</div>
 						<span class="block text-xs text-center mt-[-5px]">HS</span>
 					</div>
 					<div class="block text-2xl text-center font-[400]">:</div>
-					<div class="block text-[51px] text-center font-[300]">
+					<div class="block text-[32px] md:text-[51px] text-center font-[300]">
 						<div class="title">90</div>
 						<span class="block text-xs text-center mt-[-5px]">MIN</span>
 					</div>
 					<div class="block text-2xl text-center font-[400]">:</div>
-					<div class="block text-[51px] text-center font-[300]">
+					<div class="block text-[32px] md:text-[51px] text-center font-[300]">
 						<div class="title">90</div>
 						<span class="block text-xs text-center mt-[-5px]">SEG</span>
 					</div>
@@ -78,7 +80,7 @@ import Layout from '../layouts/Layout.astro';
 		</section>
 
 		{/*Events*/}
-		<secction class="flex items-start justify-center gap-6 py-[150px] border-b-1 border-rose-900/80">
+		<secction class="flex flex-col md:flex-row items-center md:items-start justify-center gap-[100px] md:gap-6 py-[150px] border-b-1 border-rose-900/80">
 
 			{/*Civil*/}
 			<article class="md:w-[350px] w-full flex flex-col items-center justify-center gap-6 px-[30px]">
@@ -174,8 +176,8 @@ import Layout from '../layouts/Layout.astro';
 
 		{/*Timeline */}
 		<section class="flex items-center justify-center py-10 border-b-1 border-rose-900/80">
-			<div class="flex items-center justify-center max-w-[1200px] py-[50px]">
-				<div class="flex flex-col items-center justify-center gap-6 w-full p-10">
+			<div class="flex flex-col md:flex-row items-center justify-center max-w-[1200px] py-[50px]">
+				<div class="flex flex-col items-center justify-center gap-6 w-full py-[100px] px-10  md:p-10">
 					<lord-icon
 					src="https://cdn.lordicon.com/warimioc.json"
 					trigger="loop"
@@ -186,15 +188,15 @@ import Layout from '../layouts/Layout.astro';
 					</lord-icon>
 					<h2 class="title text-[32px] mb-2">Cronograma de la Boda</h2>
 				</div>
-				<div class="w-1/2">
+				<div class="w-full md:w-1/2">
 					<img src="/timeline.svg" alt="Wedding Timeline">
 				</div>
 			</div>
 		</section>
 
 		{/*Gifts */}
-		<section class="py-[150px] bg-[url(/FONDO-ROSAS.png)] bg-cover bg-center">
-			<div class="flex flex-col w-[790px] items-center justify-center py-[60px] px-[100px] mx-auto gap-3 bg-rose-50/80 rounded-[6px]">
+		<section class="w-full py-[150px] bg-[url(/FONDO-ROSAS.png)] bg-cover bg-center">
+			<div class="flex flex-col w-[420px] md:w-[790px] items-center justify-center py-[60px] px-[30px] md:px-[100px] mx-auto gap-3 bg-rose-50/80 rounded-[6px]">
 				<lord-icon class="icon" src="https://cdn.lordicon.com/kezeezyg.json" trigger="loop" state="" stroke="light" delay="300" colors="primary:#8b0836,secondary:#8b0836" style="width:70px;height:70px"></lord-icon>
 				<h2 class="title text-[32px]">Regalos</h2>
 
@@ -225,10 +227,10 @@ import Layout from '../layouts/Layout.astro';
 		</section>
 		
 		{/*Sotial*/}
-		<secction class="flex items-start justify-center gap-6 py-[150px] border-b-1 border-rose-900/80">
+		<secction class="flex flex-col md:flex-row items-center md:items-start justify-center gap-[100px] md:gap-6 py-[150px] border-b-1 border-rose-900/80">
 
 			{/*Spotify*/}
-			<article class="md:w-[350px] w-full flex flex-col items-center justify-center gap-6">
+			<article class="md:w-[350px] w-full flex flex-col items-center justify-center gap-6 px-[30px] md:px-0">
 				<lord-icon src="https://cdn.lordicon.com/xsiktwiz.json" trigger="loop" state="" stroke="light" delay="300" colors="primary:#8b0836,secondary:#8b0836" style="width:70px;height:70px"></lord-icon>
 				<h2 class="title text-4xl text-center font-[400]">Nuestra Playlist</h2>
 				<p>
@@ -251,7 +253,7 @@ import Layout from '../layouts/Layout.astro';
 
 		</secction>
 
-		<section class="bg-cover bg-center bg-rose-900/50">
+		<section class="h-full md:h-auto bg-cover bg-center bg-rose-900/50">
 			<div class="py-[100px] w-full max-w-full flex items-center justify-center gap-6">
 				<div class="w-full flex flex-col items-center justify-center gap-6 p-10">
 					<h2 class="title text-[32px]">La medida del amor es amar sin medida</h2>
