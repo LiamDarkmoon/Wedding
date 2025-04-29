@@ -3,7 +3,11 @@ import Layout from '../layouts/Layout.astro';
 ---
 
 <Layout>
-	<main class="w-full text-center overflow-x-hidden">
+	<main class="relative w-full text-center overflow-x-hidden">
+
+		<audio src="https://www.youtube.com/watch?v=kPa7bsKwL-c" class="fixed right-0 top-[150px] z-999 bg-rose-50 rounded-tl-full rounded-bl-full p-3" loop>
+			<span class="w-10 h-10 bg-rose-900 rounded-full text-rose-50">S</span>
+		</audio>
 
 		{/*Photo Slider*/} 
 		<section class="relative flex flex-col items-center justify-end w-full h-screen">
@@ -255,7 +259,7 @@ import Layout from '../layouts/Layout.astro';
 
 		</secction>
 
-		<section class="h-[70vh] md:h-auto bg-cover bg-center bg-rose-900/50">
+		<section class="h-[70vh] md:h-auto bg-cover bg-center bg-[url(/ph.png)]">
 			<div class="py-[100px] w-full max-w-full flex items-center justify-center gap-6">
 				<div class="w-full flex flex-col items-center justify-center gap-6 p-10">
 					<h2 class="title text-[32px]">La medida del amor es amar sin medida</h2>
@@ -264,6 +268,9 @@ import Layout from '../layouts/Layout.astro';
 			</div>
 		</section>
 
+		<a href="#" class="fixed z-999 bottom-[30px] right-[30px] rounded-full text-rose-50 bg-rose-900/80 w-[50px] h-[50px] p-2 grid place-items-center">
+			W
+		</a>
 	</main>
 </Layout>
 
