@@ -1,13 +1,13 @@
 ---
 import Layout from '../layouts/Layout.astro';
+import Player from '../components/Player.tsx';
+import Gifts from '../components/Gifts.tsx';
 ---
 
 <Layout>
 	<main class="relative w-full text-center overflow-x-hidden">
 
-		<audio src="https://www.youtube.com/watch?v=kPa7bsKwL-c" class="fixed right-0 top-[150px] z-999 bg-rose-50 rounded-tl-full rounded-bl-full p-3" loop>
-			<span class="w-10 h-10 bg-rose-900 rounded-full text-rose-50">S</span>
-		</audio>
+		<Player client:only="react"/>
 
 		{/*Photo Slider*/} 
 		<section class="relative flex flex-col items-center justify-end w-full h-screen">
@@ -212,7 +212,7 @@ import Layout from '../layouts/Layout.astro';
 					Si además quieres hacernos un regalo, puedes ayudarnos con nuestra luna de miel
 				</p>
 
-				<a href="#" target="_blank" class="inline-block text-sm text-center text-rose-50 font-[600] bg-rose-900/80 py-[10px] px-[32px] mt-3 rounded-[30px]">MÁS INFORMACION</a>
+				<Gifts client:only="react"/>
 			</div>
 		</section>
 		
@@ -259,8 +259,8 @@ import Layout from '../layouts/Layout.astro';
 
 		</secction>
 
-		<section class="h-[70vh] md:h-auto bg-cover bg-center bg-[url(/ph.png)]">
-			<div class="py-[100px] w-full max-w-full flex items-center justify-center gap-6">
+		<section class="h-[70vh] md:h-auto bg-cover bg-center bg-[url(/ph.png)] text-rose-50">
+			<div class="gradient py-[100px] w-full max-w-full flex items-center justify-center gap-6">
 				<div class="w-full flex flex-col items-center justify-center gap-6 p-10">
 					<h2 class="title text-[32px]">La medida del amor es amar sin medida</h2>
 					<p>San Agustín</p>
@@ -268,8 +268,11 @@ import Layout from '../layouts/Layout.astro';
 			</div>
 		</section>
 
-		<a href="#" class="fixed z-999 bottom-[30px] right-[30px] rounded-full text-rose-50 bg-rose-900/80 w-[50px] h-[50px] p-2 grid place-items-center">
-			W
+		<a href="#" class="fixed z-999 bottom-[30px] right-[30px] rounded-full bg-rose-900/80 w-[50px] h-[50px] p-2 grid place-items-center shadow-md shadow-rose-900/80">
+			<lord-icon
+    			src="https://cdn.lordicon.com/dnphlhar.json"
+    			trigger="loop" state="" stroke="Regular" delay="300" colors="primary:#fff1f2,secondary:#fff1f2" style="width:32px;height:32px">
+			</lord-icon>
 		</a>
 	</main>
 </Layout>
