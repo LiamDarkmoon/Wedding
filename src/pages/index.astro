@@ -2,6 +2,7 @@
 import Layout from '../layouts/Layout.astro';
 import Player from '../components/Player.tsx';
 import Gifts from '../components/Gifts.tsx';
+import Timer from '../components/Timer.tsx';
 ---
 
 <Layout>
@@ -12,13 +13,13 @@ import Gifts from '../components/Gifts.tsx';
 		{/*Photo Slider*/} 
 		<section class="relative flex flex-col items-center justify-end w-full h-screen">
 			<div class="absolute gradient w-full h-full bottom-0 z-10 flex flex-col items-center justify-end px-6 pb-30">
-				<h2 class="text-3xl mb-2 text-rose-700/70">Nahuel y Viqui</h2>
+				<h2 class="text-3xl font-medium mb-2 text-rose-900/60">Nahuel y Viqui</h2>
 				<h1 class="title text-[40px] md:text-7xl mb-2 text-rose-50">¡Nos Casamos!</h1>
 				<h3 class="font-medium text-rose-50">y queremos compartilo con vos.</h3>
 			</div>
 			<div class="relative w-full h-full- max-h-full">
 				<div class="flex items-stretch justify-center w-full h-full- max-h-full">
-					<img src="/couple.png" class="flex-grow-1 object-cover object-top w-full h-screen md:h-auto" alt="couple"/>
+					<div class="bg-rose-900/80 flex-grow-1 object-cover object-top w-full h-screen md:h-auto"/>
 				</div>
 			</div>
 		</section>
@@ -37,13 +38,19 @@ import Gifts from '../components/Gifts.tsx';
 					</lord-icon>
 					<h2 class="title text-[32px] mb-2">Bienvenidos!</h2>
 					<p class="max-w-[550px]">
-						Esto es un ejemplo, donde podrás ver las principales características que incluyen nuestras invitaciones.
+						Queremos que este día sea especial para uestades como para nosotros, por eso te invitamos a que nos acompañes en este gran paso de nuestra vida.
 						<br/>
 						<br/>
-						Todos los módulos, contenidos, fotos, textos, colores y tipo de letra, son opcionales y se personalizan 100% para tu evento.
+						Te esperamos con mucha alegría para celebrar juntos este momento tan importante.
 						<br/>
 						<br/>
-						Esperamos que te guste!
+						Gracias por tu presencia y esperamos que te lo pases en grande!
+					</p>
+				</div>
+			</div>
+		</section>
+
+		{/*Invitacion */}
 					</p>
 				</div>
 			</div>
@@ -59,30 +66,10 @@ import Gifts from '../components/Gifts.tsx';
 				</p>
 				<h2 class="title text-[32px] mb-6">25 de Julio</h2>
 
-				<div class="flex items-center justify-between md:justify-center w-full h-full md:h-[148px] md:gap-[50px] px-[34px] md:py-8 mb-6" data-init-value="07/25/2025 10:30:00">
-					<div class="block text-[32px] md:text-[51px] text-center font-[300]">
-						<div class="title">85</div>
-						<span class="block text-xs text-center mt-[-5px]">DIAS</span>
-					</div>
-					<div class="block text-2xl text-center font-[400]">:</div>
-					<div class="block text-[32px] md:text-[51px] text-center font-[300]">
-						<div class="title">17</div>
-						<span class="block text-xs text-center mt-[-5px]">HS</span>
-					</div>
-					<div class="block text-2xl text-center font-[400]">:</div>
-					<div class="block text-[32px] md:text-[51px] text-center font-[300]">
-						<div class="title">36</div>
-						<span class="block text-xs text-center mt-[-5px]">MIN</span>
-					</div>
-					<div class="block text-2xl text-center font-[400]">:</div>
-					<div class="block text-[32px] md:text-[51px] text-center font-[300]">
-						<div class="title">21</div>
-						<span class="block text-xs text-center mt-[-5px]">SEG</span>
-					</div>
-				</div>
+				<Timer client:only="react"/>
 
 				<a href="https://calendar.app.google/U348TgEgohrXkMfY9" target="_blank" class="inline-block text-sm text-center text-rose-50 font-[600] bg-rose-900/80 py-[10px] px-[32px] rounded-[30px]">AGREGAR FECHA</a>
-			</div>
+			</>
 		</section>
 
 		{/*Events*/}
@@ -192,7 +179,7 @@ import Gifts from '../components/Gifts.tsx';
 					colors="primary:#8b0836,secondary:#8b0836"
 					style="width:70px;height:70px">
 					</lord-icon>
-					<h2 class="title text-[32px] mb-2">Cronograma de la Boda</h2>
+					<h2 class="title text-[32px] mb-2">Cronograma</h2>
 				</div>
 				<div class="w-[calc(100%-60px)] md:w-1/2">
 					<img src="/timeline.svg" alt="Wedding Timeline">
@@ -209,7 +196,7 @@ import Gifts from '../components/Gifts.tsx';
 				<p>
 					Tu presencia es lo más importante para nosotros.
 					<br/>
-					Si además quieres hacernos un regalo, puedes ayudarnos con nuestra luna de miel
+					Si además quieres hacernos un regalo, podes ayudarnos con una contribucion a voluntad.
 				</p>
 
 				<Gifts client:only="react"/>
@@ -259,7 +246,7 @@ import Gifts from '../components/Gifts.tsx';
 
 		</secction>
 
-		<section class="h-[70vh] md:h-auto bg-cover bg-center bg-[url(/ph.png)] text-rose-50">
+		<section class="h-[70vh] md:h-auto bg-cover bg-center bg-rose-900/800 text-rose-50">
 			<div class="gradient py-[100px] w-full max-w-full flex items-center justify-center gap-6">
 				<div class="w-full flex flex-col items-center justify-center gap-6 p-10">
 					<h2 class="title text-[32px]">La medida del amor es amar sin medida</h2>

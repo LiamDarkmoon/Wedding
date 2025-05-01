@@ -1,5 +1,7 @@
 @import "tailwindcss";
 
 .title {
-    font-family: "Old Standard TT", serif;
+font-family: "Cormorant Infant", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
 }
