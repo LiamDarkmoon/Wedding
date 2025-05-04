@@ -1,7 +1,20 @@
 @import "tailwindcss";
 
 .title {
-font-family: "Cormorant Infant", serif;
+  font-family: "Playfair", serif;
   font-optical-sizing: auto;
   font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+
+.paris {
+  font-family: "Parisienne", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.gradient {
+  background: #DFE7EF;
+  background: linear-gradient(180deg, #DFE7EF00,rgba(9, 9, 9, 0.7));
 }

@@ -3,6 +3,7 @@ import Layout from '../layouts/Layout.astro';
 import Player from '../components/Player.tsx';
 import Gifts from '../components/Gifts.tsx';
 import Timer from '../components/Timer.tsx';
+import Slider from '../components/Slider.tsx';
 ---
 
 <Layout>
@@ -11,18 +12,7 @@ import Timer from '../components/Timer.tsx';
 		<Player client:only="react"/>
 
 		{/*Photo Slider*/} 
-		<section class="relative flex flex-col items-center justify-end w-full h-screen">
-			<div class="absolute gradient w-full h-full bottom-0 z-10 flex flex-col items-center justify-end px-6 pb-30">
-				<h2 class="text-3xl font-medium mb-2 text-rose-900/60">Nahuel y Viqui</h2>
-				<h1 class="title text-[40px] md:text-7xl mb-2 text-rose-50">¡Nos Casamos!</h1>
-				<h3 class="font-medium text-rose-50">y queremos compartilo con vos.</h3>
-			</div>
-			<div class="relative w-full h-full- max-h-full">
-				<div class="flex items-stretch justify-center w-full h-full- max-h-full">
-					<div class="bg-rose-900/80 flex-grow-1 object-cover object-top w-full h-screen md:h-auto"/>
-				</div>
-			</div>
-		</section>
+		<Slider client:only="react"/>
 
 		{/*Welcome */}
 		<section class="w-full py-10 border-b-1 border-rose-900/80">
@@ -167,26 +157,6 @@ import Timer from '../components/Timer.tsx';
 
 		</secction>
 
-		{/*Timeline */}
-		<section class="flex items-center justify-center py-10 border-b-1 border-rose-900/80">
-			<div class="flex flex-col md:flex-row items-center justify-center max-w-[1200px] py-[50px]">
-				<div class="flex flex-col items-center justify-center gap-6 w-full py-[100px] px-10  md:p-10">
-					<lord-icon
-					src="https://cdn.lordicon.com/warimioc.json"
-					trigger="loop"
-					stroke="light"
-					delay="500"
-					colors="primary:#8b0836,secondary:#8b0836"
-					style="width:70px;height:70px">
-					</lord-icon>
-					<h2 class="title text-[32px] mb-2">Cronograma</h2>
-				</div>
-				<div class="w-[calc(100%-60px)] md:w-1/2">
-					<img src="/timeline.svg" alt="Wedding Timeline">
-				</div>
-			</div>
-		</section>
-
 		{/*Gifts */}
 		<section class="w-full py-[150px] bg-[url(/FONDO-ROSAS.png)] bg-cover bg-center">
 			<div class="flex flex-col w-[calc(100%-60px)] md:w-[790px] items-center justify-center py-[60px] px-[30px] md:px-[100px] mx-auto gap-3 bg-rose-50/80 rounded-[6px]">
@@ -246,11 +216,10 @@ import Timer from '../components/Timer.tsx';
 
 		</secction>
 
-		<section class="h-[70vh] md:h-auto bg-cover bg-center bg-rose-900/800 text-rose-50">
-			<div class="gradient py-[100px] w-full max-w-full flex items-center justify-center gap-6">
-				<div class="w-full flex flex-col items-center justify-center gap-6 p-10">
-					<h2 class="title text-[32px]">La medida del amor es amar sin medida</h2>
-					<p>San Agustín</p>
+		<section class="h-screen md:h-[75vh] bg-cover bg-top bg-rose-900/800 text-rose-50">
+			<div class="w-full h-full max-w-full flex items-center justify-center gap-6">
+				<div class="w-full h-full flex flex-col items-center justify-center gap-6 p-10 bg-[url('/ph1.jpg')] bg-cover bg-top">
+					<h2 class="paris text-[32px]">Si me das la mitad de tu vida, te dare la mitad de la mia</h2>
 				</div>
 			</div>
 		</section>
@@ -263,10 +232,3 @@ import Timer from '../components/Timer.tsx';
 		</a>
 	</main>
 </Layout>
-
-<style>
-	.gradient {
-		background: #DFE7EF;
-		background: linear-gradient(180deg, #DFE7EF00, #09090990);
-	}
-</style>
