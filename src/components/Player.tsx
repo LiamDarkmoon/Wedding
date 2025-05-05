@@ -5,13 +5,17 @@ export default function Player() {
     const audioRef = useRef<HTMLAudioElement>(null);
     const [isPlaying, setIsPlaying] = useState(true);
 
-    useEffect(() => {
-        if (isPlaying) {
-            audioRef.current?.play();
-        } else {
-            audioRef.current?.pause();
-        }
-    },[isPlaying])
+   useEffect(() => {
+       if (audioRef.current) {
+           setIsPlaying(!audioRef.current.paused)
+
+           if (isPlaying) {
+               audioRef.current.play();
+           } else {
+               audioRef.current.pause();
+           }
+       }
+   },[isPlaying])
 
     const HandlePlay = () => {
         setIsPlaying(!isPlaying);

@@ -16,5 +16,5 @@
 
 .gradient {
   background: #DFE7EF;
-  background: linear-gradient(180deg, #DFE7EF00,rgba(9, 9, 9, 0.7));
+  background: linear-gradient(180deg, #f5f6f700,rgba(9, 9, 9, 0.75) 60%);
 }
