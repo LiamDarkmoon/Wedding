@@ -12,3 +12,8 @@ document.addEventListener("DOMContentLoaded", () => {
 		observer.observe(element);
 	})
 })
+
+const element = document.getElementById("loader");
+/* element.addEventListener("load", () => {
+	document.getElementById("content").classList.remove("hidden");
+}) */
