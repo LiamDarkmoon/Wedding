@@ -21,7 +21,7 @@
 
 .fade {
   visibility: visible;
-  animation: fadeInUp 1.5s ease both;
+  animation: fadeInUp 1s ease both;
 }
 
 @keyframes fadeInUp {
