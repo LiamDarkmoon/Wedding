@@ -16,5 +16,21 @@
 
 .gradient {
   background: #DFE7EF;
-  background: linear-gradient(180deg, #f5f6f700,rgba(9, 9, 9, 0.75) 60%);
+  background: linear-gradient(180deg, #f5f6f700,rgba(9, 9, 9, 0.700) 60%);
+}
+
+.fade {
+  visibility: visible;
+  animation: fadeInUp 1.5s ease both;
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translate3d(0, 100%, 0);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0, 0, 0);
+  }
 }

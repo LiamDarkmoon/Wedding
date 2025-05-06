@@ -36,14 +36,14 @@ export default function Gifts() {
                                     Cuenta: Mercado Pago
                                     <br/>
                                     <b className="block text-rose-900/80 text-xs font-[700] mt-6 mb-2">Titular:</b>
-                                    Bedoy Victoria
+                                    Nahuel Lopez
                                     <br/>
-                                    <b className="block text-rose-900/80 text-sm font-[700] mt-6 mb-2">Alias: bedoy.victoria</b> 
+                                    <b className="block text-rose-900/80 text-sm font-[700] mt-6 mb-2">Alias: NahuelYViqui</b> 
                                 </p>
                                 <p>
                                     <b className="block text-rose-900/80 text-xs font-[700] mt-6 mb-2">CBU:</b>       
                                 </p>
-                                <input ref={copyRef} type="text" disabled value="01441638135435473546" className="border-none w-full text-rose-900/80"/>
+                                <input ref={copyRef} type="text" disabled value="0000003100070067793926" className="border-none w-full text-rose-900/80"/>
                                 <span className="mt-[10px]"></span>
                                 <span onClick={HandleCopy} className="inline-block font-bold bg-rose-900/80 text-rose-50 px-8 py-[10px] rounded-[40px] mt-6 cursor-pointer">COPIAR CBU</span>
                             </div>
