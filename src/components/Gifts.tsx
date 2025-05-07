@@ -18,14 +18,17 @@ export default function Gifts() {
 
     return(
         <>
-			<button 
-            onClick={HandleShow}
-            className="inline-block text-sm text-center text-rose-50 font-[600] bg-rose-900/80 py-[10px] px-[32px] mt-3 rounded-[30px] cursor-pointer hover:bg-rose-900/90 transition-all duration-300 ease-in-out">
-                MÁS INFORMACION
-            </button>
+            {
+                !show &&
+                <button 
+                onClick={HandleShow}
+                className="inline-block text-sm text-center text-rose-50 font-[600] bg-rose-900/80 py-[10px] px-[32px] mt-3 rounded-[30px] cursor-pointer hover:bg-rose-900/90 transition-all duration-300 ease-in-out">
+                    MÁS INFORMACION
+                </button>
+            }
             {
                 show ?
-                <div onClick={HandleShow} className="fixed z-3000 top-0 left-0 w-full h-full overflow-auto bg-black/40 md:pt-[50px]">
+                <div onClick={HandleShow} className="fixed z-3000 top-0 w-screen h-screen overflow-auto bg-black/40 md:pt-[50px]">
                     <div className="relative w-full h-full md:h-auto md:w-[60%] max-w-[790px] md:rounded-md flex flex-col items-center justify-center m-auto py-[60px] px-[48px] bg-rose-50">
                         <div className="w-full flex flex-col md:flex-row items-start justify-center mb-6 pb-6 border-b border-b-rose-900/50">
                             <div className="w-full md:w-[35%] text-left">

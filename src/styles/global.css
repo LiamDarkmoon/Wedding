@@ -19,8 +19,11 @@
   background: linear-gradient(180deg, #f5f6f700,rgba(9, 9, 9, 0.700) 60%);
 }
 
+.animated{
+  opacity: 0;
+}
+
 .fade {
-  visibility: visible;
   animation: fadeInUp 1s ease both;
 }
 

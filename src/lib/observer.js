@@ -13,7 +13,7 @@ document.addEventListener("DOMContentLoaded", () => {
 	})
 })
 
-const element = document.getElementById("loader");
-/* element.addEventListener("load", () => {
+const element = document.getElementById("seal");
+element.addEventListener("click", () => {
 	document.getElementById("content").classList.remove("hidden");
-}) */
+})

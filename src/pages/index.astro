@@ -7,9 +7,9 @@ import Slider from '../components/Slider.tsx';
 ---
 
 <Layout>
-	<main id="content" class="relative w-full text-center overflow-x-hidden">
+	<Player client:load/>
+	<main id="content" class="hidden w-full text-center overflow-x-hidden">
 
-		<Player client:load/>
 
 		{/*Photo Slider*/} 
 		<Slider/>
@@ -159,7 +159,7 @@ import Slider from '../components/Slider.tsx';
 
 		{/*Gifts */}
 		<section class="w-full py-[150px] bg-[url(/FONDO-ROSAS.png)] bg-cover bg-center">
-			<div class="flex flex-col w-[calc(100%-60px)] md:w-[790px] items-center justify-center py-[60px] px-[30px] md:px-[100px] mx-auto gap-3 bg-rose-50/80 rounded-[6px] animated">
+			<div class="flex flex-col w-[calc(100%-60px)] md:w-[790px] items-center justify-center py-[60px] px-[30px] md:px-[100px] mx-auto gap-3 bg-rose-50/80 rounded-[6px]">
 				<lord-icon class="icon" src="https://cdn.lordicon.com/kezeezyg.json" trigger="loop" state="" stroke="light" delay="300" colors="primary:#8b0836,secondary:#8b0836" style="width:70px;height:70px"></lord-icon>
 				<h2 class="title text-[32px]">Regalos</h2>
 
