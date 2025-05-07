@@ -8,7 +8,7 @@ import Slider from '../components/Slider.tsx';
 
 <Layout>
 	<Player client:load/>
-	<main id="content" class="hidden w-full text-center overflow-x-hidden">
+	<main id="content" class="hidden w-full max-w-full text-center overflow-x-hidden">
 
 
 		{/*Photo Slider*/} 
@@ -145,12 +145,18 @@ import Slider from '../components/Slider.tsx';
 				<lord-icon src="https://cdn.lordicon.com/dkyhucjt.json" trigger="loop" state="" stroke="light" colors="primary:#8b0836,secondary:#8b0836" style="width:70px;height:70px"></lord-icon>
 				<h2 class="title text-4xl text-center font-[400]">Dress Code</h2>
 				<div>
-					<p>
+					<p class="text-lg">
 						<b>Elegante Sport</b>
 					</p>
 					<br/>
-					<p>
+					<p class="text-sm mb-2">
 						El blanco queda reservado para la novia.
+					</p>
+					<p class="text-sm mb-2">
+						El beige queda reservado para el novio.
+					</p>
+					<p class="text-sm ">
+						El bordo queda reservado para las damas.
 					</p>
 				</div>
 			</article>
