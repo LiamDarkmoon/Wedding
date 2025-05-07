@@ -7,9 +7,9 @@ import Slider from '../components/Slider.tsx';
 ---
 
 <Layout>
-	<main id="content" class="relative hidden w-full text-center overflow-x-hidden">
+	<main id="content" class="relative w-full text-center overflow-x-hidden">
 
-		<Player client:only="react"/>
+		<Player client:load/>
 
 		{/*Photo Slider*/} 
 		<Slider/>

@@ -29,7 +29,7 @@ export default function Player() {
     return(
         <>
             <audio ref={audioRef} src="/song.m4a" preload="/song.m4a" loop/>
-            <div id="loader" className="absolute block h-screen w-screen place-items-center">
+            <div id="loader" className="absolute grid h-screen w-screen place-items-center">
                 <div 
                 className={isOpen ? "transition-all duration-1000 opacity-0 fixed z-1001 top-[-70vh] w-screen h-[70vh] md:h-[80vh] bg-[url('/inv.png')] bg-cover bg-center drop-shadow-2xl shadow-rose-950" : "fixed z-1001 top-0 w-screen h-[70vh] md:h-[80vh] bg-[url('/inv.png')] bg-cover bg-center drop-shadow-2xl shadow-rose-950"}
                 />
