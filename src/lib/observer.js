@@ -11,9 +11,10 @@ document.addEventListener("DOMContentLoaded", () => {
 	fadeElements.forEach((element) => {
 		observer.observe(element);
 	})
-})
 
-const element = document.getElementById("seal");
-element.addEventListener("click", () => {
-	document.getElementById("content").classList.remove("hidden");
+	/*Invitacion card*/
+	const element = document.getElementById("seal");
+	element.addEventListener("click", () => {
+		document.getElementById("content").classList.remove("hidden");
+	})
 })
