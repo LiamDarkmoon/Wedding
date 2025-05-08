@@ -14,7 +14,11 @@ export default function Player() {
                 audioRef.current?.play();
             }
         }
-    },[isPlaying])
+        
+        if(isOpen && audioRef.current?.paused && isPlaying) {
+            setIsPlaying(false);
+        }
+    },[audioRef, isPlaying])
     
     const HandleOpen = () => {
         audioRef.current?.play()
