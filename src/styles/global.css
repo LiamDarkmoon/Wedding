@@ -16,7 +16,7 @@
 
 .gradient {
   background: #DFE7EF;
-  background: linear-gradient(180deg, #f5f6f700,rgba(9, 9, 9, 0.700) 60%);
+  background: linear-gradient(180deg, #f5f6f700,rgba(9, 9, 9, 0.6) 60%);
 }
 
 .animated{
